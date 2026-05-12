@@ -1,0 +1,28 @@
+{
+  "manifest_version": "2026.05.12-p13-2.3-localhost",
+  "source": "remote",
+  "source_url": null,
+  "fetched_at": "2026-05-12T00:00:00+00:00",
+  "items": [
+    {
+      "id": "remote-http-zip-smoke",
+      "name": "Remote HTTP ZIP Smoke Payload",
+      "kind": "test",
+      "profile": "cpu",
+      "version": "0.0.0-p13-2.3",
+      "size_bytes": 4661,
+      "download_url": "https://github.com/d29498202/soundtotxt-assets/releases/download/runtime-smoke-2026-05-12/soundtotxt-runtime-smoke.zip",
+      "sha256": "9273d786dd612974485232fe77241252186c6988f3ee4bda793928fd0311b506",
+      "install_dir": "{data_dir}/runtime/http-zip-smoke",
+      "required": false,
+      "notes": "P13-2.3 localhost fixture. Serve docs/runtime-test-assets on port 9876 before using this manifest."
+    }
+  ],
+  "messages": [
+    {
+      "status": "ready",
+      "message": "P13-2.3 localhost manifest loaded.",
+      "detail": "This fixture validates real HTTP streaming, SHA256 verification, and ZIP extraction without large runtime files."
+    }
+  ]
+}
