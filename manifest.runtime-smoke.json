@@ -10,9 +10,9 @@
       "kind": "test",
       "profile": "cpu",
       "version": "0.0.0-p13-2.4",
-      "size_bytes": 4661,
+      "size_bytes": 5525516,
       "download_url": "https://github.com/d29498202/soundtotxt-assets/releases/download/runtime-smoke-2026-05-12/large-test.zip.zip",
-      "sha256": "9273d786dd612974485232fe77241252186c6988f3ee4bda793928fd0311b506",
+      "sha256": "3214915b7959b633ea817c2b5d6b61621d112f2d126636e38f3df879b48b79b5",
       "install_dir": "{data_dir}/runtime/http-zip-smoke",
       "required": false,
       "notes": "P13-2.4 public HTTPS smoke test asset. This must point to the GitHub Releases asset download URL, not a GitHub web page."
