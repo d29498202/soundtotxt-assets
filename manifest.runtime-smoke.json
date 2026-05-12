@@ -11,7 +11,7 @@
       "profile": "cpu",
       "version": "0.0.0-p13-2.4",
       "size_bytes": 4661,
-      "download_url": "https://github.com/d29498202/soundtotxt-assets/releases/download/runtime-smoke-2026-05-12/soundtotxt-runtime-smoke.zip",
+      "download_url": "https://github.com/d29498202/soundtotxt-assets/releases/download/runtime-smoke-2026-05-12/large-test.zip.zip",
       "sha256": "9273d786dd612974485232fe77241252186c6988f3ee4bda793928fd0311b506",
       "install_dir": "{data_dir}/runtime/http-zip-smoke",
       "required": false,
