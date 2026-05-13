@@ -1,0 +1,41 @@
+{
+  "manifest_version": "2026.05.13-p13-3.1-localhost-staging",
+  "source": "remote",
+  "source_url": null,
+  "fetched_at": "2026-05-13T00:00:00+00:00",
+  "items": [
+    {
+      "id": "asr-runtime-cuda-staging",
+      "name": "ASR CUDA Runtime Staging",
+      "kind": "test",
+      "profile": "cuda",
+      "version": "staging-2026.05.13",
+      "size_bytes": 2267,
+      "download_url": "https://raw.githubusercontent.com/d29498202/soundtotxt-assets/main/asr-runtime-cuda-staging.zip",
+      "sha256": "ab3a997933501c4bc48ffd0c6e0bc43aa65719e462bab02eec88841254eea10a",
+      "install_dir": "{data_dir}/runtime/cuda",
+      "required": true,
+      "notes": "P13-3.1 localhost staging runtime package. It mimics managed ASR runtime layout without real AI binaries."
+    },
+    {
+      "id": "faster-whisper-large-v3-turbo-staging",
+      "name": "faster-whisper large-v3-turbo Model Staging",
+      "kind": "test",
+      "profile": "cuda",
+      "version": "staging-2026.05.13",
+      "size_bytes": 1174,
+      "download_url": "https://raw.githubusercontent.com/d29498202/soundtotxt-assets/main/faster-whisper-large-v3-turbo-staging.zip",
+      "sha256": "ffd0a853a3b12da0a2d660f76ab66cf347b549a139253c9bc8b6091a2042489d",
+      "install_dir": "{data_dir}/models/faster-whisper-large-v3-turbo",
+      "required": true,
+      "notes": "P13-3.1 localhost staging model package with marker files for LOCAL ASR diagnostics."
+    }
+  ],
+  "messages": [
+    {
+      "status": "ready",
+      "message": "P13-3.1 localhost staging manifest loaded.",
+      "detail": "This fixture validates managed runtime/model ZIP unpack paths without large AI files."
+    }
+  ]
+}
