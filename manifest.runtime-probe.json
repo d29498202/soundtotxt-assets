@@ -1,5 +1,5 @@
 {
-  "manifest_version": "2026.05.14-p13-5.3-remote-probe",
+  "manifest_version": "2026.05.14-p13-5.4-remote-probe-model-structural",
   "items": [
     {
       "id": "asr-runtime-cuda-probe",
@@ -12,8 +12,27 @@
       "sha256": "c252bcf21a0fdb20774bb76d02d69b384f63b2c562adde8c457ca9f01787bf19",
       "install_dir": "{data_dir}/runtime/cuda",
       "required": true,
-      "notes": "P13-5 Real Managed Python Runtime Probe. capable of importing faster-whisper."
+      "notes": "P13-5 Real Managed Python Runtime Probe. Capable of importing faster-whisper and ctranslate2, but does not include real ASR model weights."
+    },
+    {
+      "id": "faster-whisper-large-v3-turbo-structural",
+      "name": "faster-whisper large-v3-turbo Structural Model",
+      "kind": "test",
+      "profile": "cuda",
+      "version": "structural-2026.05.14",
+      "size_bytes": 1577,
+      "download_url": "https://github.com/d29498202/soundtotxt-assets/releases/download/runtime-smoke-2026-05-12/faster-whisper-large-v3-turbo-structural.zip",
+      "sha256": "62e09f6b10cfb1124cf875d6f97ac32cd3e9c325ee7340e82a32c3700156d86e",
+      "install_dir": "{data_dir}/models/faster-whisper-large-v3-turbo",
+      "required": true,
+      "notes": "P13-5.4 Structural model placeholder. Validates managed model layout and diagnostics, but does not include real inference weights."
     }
   ],
-  "messages": []
+  "messages": [
+    {
+      "status": "ready",
+      "message": "P13-5.4 remote runtime probe and structural model manifest loaded.",
+      "detail": "This beta manifest validates managed runtime plus structural model download and diagnostic routing without real GB-scale ASR weights."
+    }
+  ]
 }
