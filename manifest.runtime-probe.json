@@ -1,5 +1,5 @@
 {
-  "manifest_version": "2026.05.14-p13-5.4-remote-probe-model-structural",
+  "manifest_version": "2026.05.14-p13-6.1-remote-tiny",
   "items": [
     {
       "id": "asr-runtime-cuda-probe",
@@ -12,27 +12,21 @@
       "sha256": "c252bcf21a0fdb20774bb76d02d69b384f63b2c562adde8c457ca9f01787bf19",
       "install_dir": "{data_dir}/runtime/cuda",
       "required": true,
-      "notes": "P13-5 Real Managed Python Runtime Probe. Capable of importing faster-whisper and ctranslate2, but does not include real ASR model weights."
+      "notes": "P13-5 Real Managed Python Runtime Probe."
     },
     {
-      "id": "faster-whisper-large-v3-turbo-structural",
-      "name": "faster-whisper large-v3-turbo Structural Model",
+      "id": "faster-whisper-tiny-cpu",
+      "name": "faster-whisper tiny (Real Smoke)",
       "kind": "test",
-      "profile": "cuda",
-      "version": "structural-2026.05.14",
-      "size_bytes": 1577,
-      "download_url": "https://github.com/d29498202/soundtotxt-assets/releases/download/runtime-smoke-2026-05-12/faster-whisper-large-v3-turbo-structural.zip",
-      "sha256": "62e09f6b10cfb1124cf875d6f97ac32cd3e9c325ee7340e82a32c3700156d86e",
-      "install_dir": "{data_dir}/models/faster-whisper-large-v3-turbo",
+      "profile": "cpu",
+      "version": "tiny-2026.05.14",
+      "size_bytes": 69925149,
+      "download_url": "https://github.com/d29498202/soundtotxt-assets/releases/download/runtime-smoke-2026-05-12/faster-whisper-tiny-cpu.zip",
+      "sha256": "74daeb966294d5ab8fa7aab9239f536f19c3ef026ac15d5743460a63dd259d55",
+      "install_dir": "{data_dir}/models/faster-whisper-tiny",
       "required": true,
-      "notes": "P13-5.4 Structural model placeholder. Validates managed model layout and diagnostics, but does not include real inference weights."
+      "notes": "P13-6.1 Real Tiny Model for CPU-first Smoke Test."
     }
   ],
-  "messages": [
-    {
-      "status": "ready",
-      "message": "P13-5.4 remote runtime probe and structural model manifest loaded.",
-      "detail": "This beta manifest validates managed runtime plus structural model download and diagnostic routing without real GB-scale ASR weights."
-    }
-  ]
+  "messages": []
 }
