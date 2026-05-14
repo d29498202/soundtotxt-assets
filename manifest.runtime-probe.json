@@ -1,0 +1,19 @@
+{
+  "manifest_version": "2026.05.14-p13-5.3-remote-probe",
+  "items": [
+    {
+      "id": "asr-runtime-cuda-probe",
+      "name": "ASR CUDA Runtime Probe",
+      "kind": "test",
+      "profile": "cuda",
+      "version": "probe-2026.05.14",
+      "size_bytes": 120366530,
+      "download_url": "https://github.com/d29498202/soundtotxt-assets/releases/download/runtime-smoke-2026-05-12/asr-runtime-probe-windows-x64.zip",
+      "sha256": "c252bcf21a0fdb20774bb76d02d69b384f63b2c562adde8c457ca9f01787bf19",
+      "install_dir": "{data_dir}/runtime/cuda",
+      "required": true,
+      "notes": "P13-5 Real Managed Python Runtime Probe. capable of importing faster-whisper."
+    }
+  ],
+  "messages": []
+}
