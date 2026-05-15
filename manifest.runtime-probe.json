@@ -1,5 +1,8 @@
 {
-  "manifest_version": "2026.05.14-p13-6.1-remote-tiny",
+  "manifest_version": "2026.05.15-p13-8.7-remote-large-model",
+  "source": "remote",
+  "source_url": "https://raw.githubusercontent.com/d29498202/soundtotxt-assets/refs/heads/main/manifest.runtime-probe.json",
+  "fetched_at": "2026-05-15T00:00:00+00:00",
   "items": [
     {
       "id": "asr-runtime-cuda-probe",
@@ -26,7 +29,31 @@
       "install_dir": "{data_dir}/models/faster-whisper-tiny",
       "required": true,
       "notes": "P13-6.1 Real Tiny Model for CPU-first Smoke Test."
+    },
+    {
+      "id": "faster-whisper-large-v3-turbo",
+      "name": "faster-whisper large-v3-turbo Model",
+      "kind": "model",
+      "profile": "large-cuda",
+      "version": "large-v3-turbo-2026.05.15-poc1",
+      "size_bytes": 1492333461,
+      "download_url": "https://github.com/d29498202/soundtotxt-assets/releases/download/large-model-p13-8-7/faster-whisper-large-v3-turbo-windows-x64.zip",
+      "sha256": "fa1813a68750934c8fb3d34f0a369d136e09331a83918a25a675daebd421afb0",
+      "install_dir": "{data_dir}/models/faster-whisper-large-v3-turbo",
+      "required": true,
+      "requires": {
+        "min_disk_free_gb": 12,
+        "min_ram_gb": 16,
+        "recommended_runtime_variant": "cuda-cu128"
+      },
+      "notes": "P13-8.7 remote real large model package. Uses safe staging validation before replacing the managed model directory."
     }
   ],
-  "messages": []
+  "messages": [
+    {
+      "status": "ready",
+      "message": "P13-8.7 beta manifest includes the remote large model package.",
+      "detail": "This manifest validates public HTTPS download, SHA256 verification, safe staging install, and diagnostics for faster-whisper-large-v3-turbo."
+    }
+  ]
 }
